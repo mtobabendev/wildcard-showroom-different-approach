@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Different Approach Auto Detailing | WildCard DEV $995 Demo</title>
-  <meta name="description" content="Fictional showroom example of a polished $995 WildCard DEV Launch Build for an auto detailing business." />
+  <title>Different Approach Auto Detailing | WildCard DEV $1,500 Enhanced Demo</title>
+  <meta name="description" content="Fictional showroom example of a WildCard DEV $1,500 Enhanced Build for an auto detailing business." />
   <meta name="theme-color" content="#151b18" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Different Approach Auto Detailing | Demo Launch Build" />
-  <meta property="og:description" content="A fictional one-page auto detailing business site demonstrating the WildCard DEV $995 Launch Build." />
+  <meta property="og:title" content="Different Approach Auto Detailing | $1,500 Enhanced Demo" />
+  <meta property="og:description" content="A fictional one-page auto detailing business site demonstrating the WildCard DEV $1,500 Enhanced Build." />
   <meta property="og:site_name" content="Different Approach Auto Detailing — Demo" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Different Approach Auto Detailing | Demo Launch Build" />
-  <meta name="twitter:description" content="Fictional showroom example of the WildCard DEV $995 Launch Build." />
+  <meta name="twitter:title" content="Different Approach Auto Detailing | Enhanced Demo Build" />
+  <meta name="twitter:description" content="Fictional showroom example of the WildCard DEV $1,500 Enhanced Build." />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -21,8 +21,11 @@
 
   <aside class="demo-bar" aria-label="Showroom demo notice">
     <div class="container demo-bar-inner">
-      <span><strong>WILDCARD DEV DEMO</strong> · EXAMPLE $995 LAUNCH BUILD</span>
-      <a href="https://pennysoffice.wildcarddev.com/">BACK TO PENNY'S GARAGE</a>
+      <span><strong>WILDCARD DEV DEMO</strong> · EXAMPLE $1,500 ENHANCED BUILD</span>
+      <span class="demo-links">
+        <a href="https://github.com/mtobabendev/wildcard-showroom-different-approach/tree/c4c8bb87edbea7247b3c7336082e8aca2bf08542">VIEW $995 LAUNCH VERSION</a>
+        <a href="https://pennysoffice.wildcarddev.com/">BACK TO PENNY'S GARAGE</a>
+      </span>
     </div>
   </aside>
 
@@ -96,45 +99,68 @@
       </div>
     </section>
 
-    <section class="section section-surface" id="services">
+    <section class="section section-surface premium-services" id="services">
       <div class="container">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Services</p>
+        <div class="section-heading premium-heading" data-reveal>
+          <p class="eyebrow">Enhanced Service Experience</p>
           <h2>Choose the level of reset your vehicle actually needs.</h2>
-          <p>Sample service structure for showroom purposes. Prices below are fictional examples only and are not offers from a real detailing company.</p>
+          <p>The same five launch-stage services now gain a custom interactive presentation layer: spatial navigation, richer motion, selected-state storytelling, and detailed service views. Pricing remains fictional showroom copy.</p>
+          <p class="enhancement-note">ENHANCED BUILD LAYER · INTERACTIVE PRESENTATION, NOT BOOKING OR CHECKOUT</p>
         </div>
 
-        <div class="cards-grid services-grid">
-          <article class="service-card" data-reveal>
-            <p class="card-kicker">SAMPLE SERVICE</p>
-            <h3>Interior Reset</h3>
-            <p>Focused cleanup for the cabin, touchpoints, glass, surfaces, and the everyday buildup that makes a vehicle feel tired.</p>
-            <p class="demo-price"><span>SAMPLE PRICE</span> $149</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <p class="card-kicker">SAMPLE SERVICE</p>
-            <h3>Exterior Detail</h3>
-            <p>Careful wash process, wheel and tire cleanup, exterior glass, finishing touches, and protection for a sharper final presentation.</p>
-            <p class="demo-price"><span>SAMPLE PRICE</span> $179</p>
-          </article>
-          <article class="service-card featured-card" data-reveal>
-            <p class="card-kicker">SAMPLE SERVICE</p>
-            <h3>Full Detail</h3>
-            <p>A coordinated interior and exterior reset for vehicles that need more than a quick pass and deserve a complete refresh.</p>
-            <p class="demo-price"><span>SAMPLE PRICE</span> $289</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <p class="card-kicker">SAMPLE SERVICE</p>
-            <h3>Paint Enhancement</h3>
-            <p>A demo example of a higher-care finish service focused on improving gloss and reducing the visual impact of light defects.</p>
-            <p class="demo-price"><span>SAMPLE PRICE</span> Quote example</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <p class="card-kicker">SAMPLE SERVICE</p>
-            <h3>Maintenance Detail</h3>
-            <p>A lighter recurring service concept designed to help a previously detailed vehicle stay clean and presentable.</p>
-            <p class="demo-price"><span>SAMPLE PRICE</span> $99</p>
-          </article>
+        <div class="service-orbit-shell" data-reveal>
+          <div
+            class="service-orbit-stage"
+            id="serviceOrbitStage"
+            tabindex="0"
+            aria-roledescription="carousel"
+            aria-label="Detailing services. Use left and right arrow keys to rotate services. Press Enter for selected service details."
+          >
+            <span class="orbit-ribbon orbit-ribbon-a" aria-hidden="true"></span>
+            <span class="orbit-ribbon orbit-ribbon-b" aria-hidden="true"></span>
+
+            <div class="service-orbit" id="serviceOrbit" aria-live="off">
+              <button class="orbit-card" type="button" data-service="0" aria-label="Interior Reset details">
+                <span class="orbit-card-number">01</span>
+                <strong>Interior Reset</strong>
+                <small>SAMPLE PRICE · $149</small>
+              </button>
+              <button class="orbit-card" type="button" data-service="1" aria-label="Exterior Detail details">
+                <span class="orbit-card-number">02</span>
+                <strong>Exterior Detail</strong>
+                <small>SAMPLE PRICE · $179</small>
+              </button>
+              <button class="orbit-card" type="button" data-service="2" aria-label="Full Detail details">
+                <span class="orbit-card-number">03</span>
+                <strong>Full Detail</strong>
+                <small>SAMPLE PRICE · $289</small>
+              </button>
+              <button class="orbit-card" type="button" data-service="3" aria-label="Paint Enhancement details">
+                <span class="orbit-card-number">04</span>
+                <strong>Paint Enhancement</strong>
+                <small>SAMPLE PRICE · QUOTE</small>
+              </button>
+              <button class="orbit-card" type="button" data-service="4" aria-label="Maintenance Detail details">
+                <span class="orbit-card-number">05</span>
+                <strong>Maintenance Detail</strong>
+                <small>SAMPLE PRICE · $99</small>
+              </button>
+            </div>
+
+            <div class="orbit-hub" aria-hidden="true">
+              <span class="hub-ring hub-ring-outer"></span>
+              <span class="hub-ring hub-ring-inner"></span>
+              <span class="hub-mark">DA</span>
+              <span class="hub-label">DETAILING</span>
+            </div>
+          </div>
+
+          <div class="orbit-controls" aria-label="Service rotation controls">
+            <button class="orbit-control" id="servicePrevious" type="button" aria-label="Previous service">←</button>
+            <p class="orbit-status" id="serviceStatus" aria-live="polite">Interior Reset selected · 1 of 5</p>
+            <button class="orbit-control" id="serviceNext" type="button" aria-label="Next service">→</button>
+          </div>
+          <p class="orbit-help">SELECT A CARD FOR DETAILS · ARROW KEYS ROTATE · AUTO-CYCLE PAUSES AFTER INTERACTION</p>
         </div>
       </div>
     </section>
@@ -276,8 +302,8 @@
     <section class="section final-cta">
       <div class="container final-cta-panel" data-reveal>
         <p class="eyebrow">A Different Approach</p>
-        <h2>Clean offer. Clean site. Clear next step.</h2>
-        <p>This is the Stage 1 showroom baseline: a polished launch site without premium animation systems or application infrastructure.</p>
+        <h2>Clean offer. Premium presentation. Clear next step.</h2>
+        <p>This enhanced showroom tier keeps the same business foundation while adding bespoke interaction, motion, detail presentation, and visual storytelling.</p>
         <a class="button button-primary" href="#quote">See the Demo Quote Form</a>
       </div>
     </section>
@@ -291,10 +317,25 @@
       </div>
       <div class="footer-links">
         <a href="#top">Back to top</a>
+        <a href="https://github.com/mtobabendev/wildcard-showroom-different-approach/tree/c4c8bb87edbea7247b3c7336082e8aca2bf08542">View $995 Launch Version</a>
         <a href="https://pennysoffice.wildcarddev.com/">Back to Penny's Garage</a>
       </div>
-      <p class="footer-note">WILDCARD DEV DEMO · EXAMPLE $995 LAUNCH BUILD · NOT A REAL BUSINESS</p>
+      <p class="footer-note">WILDCARD DEV DEMO · EXAMPLE $1,500 ENHANCED BUILD · NOT A REAL BUSINESS</p>
     </div>
   </footer>
+
+  <dialog class="service-dialog" id="serviceDialog" aria-labelledby="serviceDialogTitle">
+    <button class="dialog-close" id="serviceDialogClose" type="button" aria-label="Close service details">×</button>
+    <p class="dialog-kicker">DIFFERENT APPROACH · DEMO SERVICE</p>
+    <h2 id="serviceDialogTitle">Interior Reset</h2>
+    <p class="dialog-use" id="serviceDialogUse"></p>
+    <p id="serviceDialogDescription"></p>
+    <div class="dialog-price"><span>SAMPLE / DEMO PRICE</span><strong id="serviceDialogPrice"></strong></div>
+    <div class="dialog-includes">
+      <h3>What this sample package includes</h3>
+      <ul id="serviceDialogIncludes"></ul>
+    </div>
+    <a class="button button-primary" id="serviceDialogCta" href="#quote">Continue to Demo Quote</a>
+  </dialog>
 </body>
 </html>
